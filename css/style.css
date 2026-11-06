@@ -1,0 +1,635 @@
+:root {
+    --main-color: #CBFE1C;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'ChakraPetch', sans-serif;
+
+}
+
+@font-face {
+    font-family: 'daysone';
+    src: url('../fonts/DaysOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ChakraPetch';
+    src: url('../fonts/ChakraPetch-Regular.ttf') format('truetype');
+}
+
+.color-main {
+    color: var(--main-color);
+}
+
+        /* NAV BAR*/
+nav .active {
+    background-color: var(--main-color);
+}
+nav {
+    background-color: #0B0E13;
+}
+.drawer-body{
+    background-color: #0B0E13;
+    width: 100%;
+}
+.drawer-body li a {
+    color: white;
+}
+
+.drawer-body li a:hover {
+    color: var(--main-color);
+}
+
+.right-side .svg-inline--fa.fa-lg {
+    color: white;
+}
+
+.right-side .svg-inline--fa.fa-lg :hover {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.right-side button {
+    background-color: var(--main-color);
+    color: black;
+
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.btn-icon:hover {
+    color: var(--main-color);
+    transition: none;
+    background-color: transparent;
+
+    border: none;
+}
+nav .right-side button:hover{
+    background-color: #A4CE1A;
+}
+
+         /* HOME*/
+main .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    padding-top: 70px
+}
+
+.hero h1 {
+    font-family: 'daysone', sans-serif;
+    color: #f1f1f1;
+}
+
+.hero h1 span {
+    font-family: 'daysone', sans-serif;
+}
+
+.hero p {
+    color: #d1d5dc;
+    font-family: 'ChakraPetch', sans-serif;
+}
+
+.hero .btns .btn-solid {
+    background-color: var(--main-color);
+    color: black;
+    font-family: 'ChakraPetch', sans-serif;
+}
+
+.hero .btns .btn-outline {
+    background-color: transparent;
+    font-family: 'ChakraPetch', sans-serif;
+    border: 2px solid var(--main-color);
+}
+.hero .btns .btn-solid:hover{
+    background-color: #A4CE1A;
+}
+.hero .btns .btn-outline:hover {
+    background-color: var(--main-color);
+    color: black;
+    transition: none;
+}
+
+.hero img {
+    border: 5px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.hero-padge {
+    background-color: #0B0E13;
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.padge-content span {
+    color: #99a1af;
+    font-family: 'ChakraPetch', sans-serif;
+
+}
+
+.padge-content h3 {
+    color: #f1f1f1;
+    font-family: 'ChakraPetch', sans-serif;
+}
+
+
+
+
+         /* OUR GAMES*/
+.our-games {
+    background-color: #0B0E13;
+}
+
+.p-spicial {
+    color: var(--main-color);
+    margin: 40px 0;
+}
+
+.p-spicial::before,
+.p-spicial::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(-90deg, transparent, #c6ff00);
+    max-width: 60px;
+    margin: 0 20px;
+}
+
+.p-spicial::before {
+    background: linear-gradient(-270deg, transparent, #c6ff00);
+}
+
+.h2-spicial {
+    color: #f1f1f1;
+    font-family: 'daysone', sans-serif;
+    line-height: 48px;
+
+}
+
+.view-btn {
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+}
+
+.view-btn:hover {
+    background-color: var(--main-color);
+    color: black;
+    transition: none;
+}
+
+.carousel-btns .btn-icon:hover {
+    color: var(--main-color);
+    transition: none;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.game-card {
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.game-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.game-overlay {
+    inset: 0;
+    padding: 20px;
+    background: linear-gradient(
+        to top,
+        rgba(210, 255, 0, 0.95),
+        rgba(210,255,0,0.4),
+        transparent
+    );
+    opacity: 0;
+    transition:  0.4s ease;
+}
+
+.game-categories {
+    gap: 15px;
+    font-size: 14px;
+}
+
+.game-overlay h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+}
+.game-card .game-categories span{
+    background-color: #29451B;
+    border-radius: 15px;
+    padding: 7px;
+}
+.game-card:hover {
+    border:2px solid #baff00;
+    transform: translateY(-5px);
+}
+
+.game-card:hover img {
+    transform: scale(1.1);
+}
+
+.game-card:hover .game-overlay {
+    opacity: 2;
+}
+
+         /*WHAT WE DO*/
+.what-we-do {
+    background-color: #0B0E13;
+}
+
+.what-we-do .cards .inner {
+    background-color: #1A1A1A;
+    border: 1px solid #1e2939;
+    position: relative;
+    transition: all 0.3 ease-in-out;
+}
+.inner .corner-shape{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 5;
+}
+.inner .corner-shape.top-left{
+    top: 10px;
+    left: 10px;
+    border-width: 25px 25px 0 0;
+    border-color: #deff00 transparent transparent transparent;
+}
+.inner .corner-shape.bottom-right{
+    bottom: 10px;
+    right: 10px;
+    border-width:0 0 25px 25px;
+    border-color:transparent transparent #deff00 transparent;
+}
+.what-we-do .cards .inner:hover{
+    border:1px solid #baff00;
+}
+.inner:hover .corner-shape{
+    opacity: 1;
+}
+.card-i {
+    background-color: #1e2939;
+
+}
+.inner:hover .card-i{
+    background-color:#baff00 ;
+}
+.inner:hover .card-i .svg-inline--fa{
+    color: black;
+}
+.what-we-do .cards h3 {
+    color: #f1f1f1;
+    font-family: 'daysone', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    padding-top: 20px;
+}
+
+.logos-marquee-section::before,
+.logos-marquee-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.logos-marquee-section::before {
+    left: 0;
+}
+
+.logos-marquee-section::after {
+    right: 0;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+}
+
+.logos-marquee-section {
+    background: radial-gradient(ellipse at center, rgba(204, 255, 0, 0.25) 0%, rgba(0, 0, 0, 0) 70%) center center / 900px 400px no-repeat;
+}
+
+.marquee-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 70%;
+    animation: scroll-left 40s linear infinite;
+}
+
+.marquee-right .marquee-group {
+    animation: scroll-right 40s linear infinite;
+}
+
+.marquee-group img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 18px;
+    flex-shrink: 0;
+}
+
+.logos-marquee-section .top-neon-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 1px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 15px var(--main-color), 0 0 10px var(--main-color), 0 0 10px var(--main-color);
+    z-index: 3;
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+         /*OUR TEAM*/
+.our-team {
+    background-color: #0B0E13;
+}
+
+.our-team .p-spicial {
+    margin: 20px 0px;
+}
+
+.our-team .team-content .p2 {
+    color: #99a1af;
+    line-height: 28px;
+}
+
+.image-content h3 {
+    font-family: 'daysone', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+.image-content .para {
+
+    color: #99a1af;
+}
+
+.team-image .padge {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.vertical-text {
+    position: absolute;
+    right: 230px;
+    bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 1;
+    z-index: 3;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+}
+
+.team-image {
+  position: relative;
+  overflow: hidden;
+}
+.team-image img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  width: 100%;
+  display: block;
+}
+.team-image .card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1;
+}
+
+.team-image:hover .card-overlay {
+  transform: translateY(-100%);
+}
+.team-image:hover img {
+  filter: grayscale(0%); 
+}
+.team-image:hover .padge span,
+.team-image:hover .image-content .p-trans
+{
+  color: var(--main-color); 
+}
+
+
+        /* contact us*/
+.contact-us {
+    background-color: #0F1625;
+}
+
+.contact-us .contact-content p {
+    margin: 20px 0;
+}
+
+.contact-card {
+    background-color: #1E2939;
+}
+
+.contact-card .contact-icon {
+    background-color: var(--main-color);
+    width: 70px;
+    height: 70px;
+}
+
+.contact-card .contact-details h3 {
+    color: #f1f1f1;
+    font-family: 'daysone', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-card .contact-details p {
+    color: #99a1af;
+}
+
+.community-card {
+    background: linear-gradient(135deg, #ccff00 0%, #33cc66 100%);
+}
+
+.contact-community .community-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #0B0E13;
+}
+
+.contact-card .community-details h3 {
+    color: #0b0e13;
+    font-family: 'daysone', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.contact-card .community-details p {
+    color: #0b0e13;
+}
+
+.contact-community .community-icon:hover {
+
+    background-color: #293C1E;
+    cursor: pointer;
+}
+
+.forms h3 {
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'daysone', sans-serif;
+
+}
+
+.forms form label {
+    color: #d1d5dc;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+
+.forms form .full-name input {
+    background-color: #364153;
+    border: 1px solid #f1f1f1;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+}
+
+.forms form .email input {
+    background-color: #364153;
+    border: 1px solid #f1f1f1;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.forms form .subject select {
+    background-color: #364153;
+    border: 1px solid #f1f1f1;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+    color: #f1f1f1;
+
+
+}
+
+.forms form .text-area textarea {
+    background-color: #364153;
+    border: 1px solid #f1f1f1;
+    border-radius: 7px;
+    padding: 10px;
+
+}
+
+.forms form .checks label {
+    color: #99a1af;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.forms form button {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.forms .rate p {
+    color: #99a1af;
+    font-size: 14px;
+}
+
+.forms form input:focus,
+.forms form textarea:focus,
+.forms form select:focus {
+    border: 2px solid var(--main-color);
+    box-shadow: none;
+    outline: none;
+}
+
+.forms form button:hover {
+    background-color: #A8D321;
+}
+
+
+         /* footer*/
+footer .inner h4 {
+    color: #f1f1f1;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'daysone', sans-serif;
+}
+
+footer .svg-inline--fa:hover,
+footer a:hover{
+    color: var(--main-color);
+}
